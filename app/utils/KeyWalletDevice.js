@@ -16,10 +16,6 @@ export default class KeyWalletDevice {
         console.log('data: ', data);
     }
 
-    _onDeviceDetached = (onDeviceDetached, device) => {
-        return onDeviceDetached(device)
-    }
-
     isConnected = () => {
         return new Promise((resolve) => {
             try {
